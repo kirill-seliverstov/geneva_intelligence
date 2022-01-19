@@ -1,1 +1,0 @@
-## geneva_intelligence react app 
