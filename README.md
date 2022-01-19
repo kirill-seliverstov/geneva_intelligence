@@ -1,1 +1,1 @@
-## geneva_intelligence app
+## geneva_intelligence react app 
