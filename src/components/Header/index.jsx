@@ -18,10 +18,14 @@ import {
     Wrapper
 } from './styles';
 
-function Header() {
+const Header = () => {
     return (
+        <>
+
             <HeaderWrapper>
-                <Logo src={company_logo} />
+                <Link to="/">
+                    <Logo src={company_logo} />
+                </Link>
                 <Wrapper>
                     <LinksWrapper>
                         <StyledLink to="/services">Services &amp; Méthodologie </StyledLink>
@@ -35,6 +39,7 @@ function Header() {
                     </SocialNetworksWrapper>
                 </Wrapper>
             </HeaderWrapper>
+        </>
     );
 }
 
