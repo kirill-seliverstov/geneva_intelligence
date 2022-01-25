@@ -7,26 +7,23 @@ import facebook_logo from '../../assets/logos/facebook_logo.svg'
 import linkedin_logo from '../../assets/logos/linkedin_logo.svg'
 
 import {
-    SocialNetworksWrapper,
-    SocialNetworkLogo,
-    FooterWrapper,
-    Copyright
+    StyledFooter
 } from './styles';
 
 const Footer = () => {
     return (
         <>
-            <FooterWrapper>
-                <SocialNetworksWrapper>
-                    <SocialNetworkLogo src={instagram_logo} />
-                    <SocialNetworkLogo src={twitter_logo} />
-                    <SocialNetworkLogo src={facebook_logo} />
-                    <SocialNetworkLogo src={linkedin_logo} />
-                </SocialNetworksWrapper>
-                <Copyright>
+            <StyledFooter.Wrapper>
+                <StyledFooter.SocialsWrapper>
+                    <StyledFooter.SocialLogo src={instagram_logo} />
+                    <StyledFooter.SocialLogo src={twitter_logo} />
+                    <StyledFooter.SocialLogo src={facebook_logo} />
+                    <StyledFooter.SocialLogo src={linkedin_logo} />
+                </StyledFooter.SocialsWrapper>
+                <StyledFooter.Copyright>
                     2021© Geneva Intelligence. All rights reserved.
-                </Copyright>
-            </FooterWrapper>
+                </StyledFooter.Copyright>
+            </StyledFooter.Wrapper>
         </>
     );
 };

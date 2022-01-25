@@ -4,15 +4,13 @@ import Layout from './Layout/Layout';
 
 function App() {
   return (
-    <>
+    <Layout>
       <Routes>
-        <Route path="/" element={<Layout />}>
-          <Route index />
-          <Route path="services"/>
-          <Route path="blog"/>
-        </Route>
+        <Route path="/" element={<div>test</div>} />
+        <Route path="services" element={<div>services</div>} />
+        <Route path="blog" element={<div>blog</div>}/>
       </Routes>
-    </>
+    </Layout>
   );
 }
 
