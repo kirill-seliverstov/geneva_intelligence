@@ -2,7 +2,12 @@ import styled from 'styled-components';
 
 import { NavLink } from 'react-router-dom';
 
-const screenWidth = '320px';
+import {
+    InstagramLogo,
+    FacebookLogo,
+    LinkedinLogo,
+    TwitterLogo
+} from '../../assets/svg/Socials';
 
 const HeaderWrapper = styled.div`
     display: flex;
@@ -20,7 +25,6 @@ const Wrapper = styled.div`
 const Logo = styled.img`
     
 `
-
 
 const LinksWrapper = styled.div`
     display: flex;
@@ -42,22 +46,23 @@ const StyledLink = styled(NavLink)`
 `
 
 const SocialNetworksWrapper = styled.div`
-    display: flex;  
+    display: flex;
+    justify-content: space-between;  
 `
-
-const SocialNetworkLogo = styled.img`
+const SocialLogo = styled.div`
     &:not(:last-child) {
-        padding-right: 0.75rem;
+        margin-right: 0.75rem;
     }
 `
+
 
 export {
     HeaderWrapper,
     Logo,
-    SocialNetworkLogo,
     LinksWrapper,
     StyledLink,
     SocialNetworksWrapper,
     Wrapper,
+    SocialLogo
 }
 
