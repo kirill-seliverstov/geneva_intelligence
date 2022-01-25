@@ -2,13 +2,6 @@ import styled from 'styled-components';
 
 import { NavLink } from 'react-router-dom';
 
-import {
-    InstagramLogo,
-    FacebookLogo,
-    LinkedinLogo,
-    TwitterLogo
-} from '../../assets/svg/Socials';
-
 const HeaderWrapper = styled.div`
     display: flex;
     justify-content: space-between;
