@@ -23,14 +23,11 @@ const Copyright = styled.p`
     line-height: 100%;
     letter-spacing: 0.2px;
 `
-const StyledSocialLogo = styled.img`
-    padding-right: 2rem;
-`
+
 
 export {
     FooterWrapper,
     SocialsWrapper,
     Copyright,
-    StyledSocialLogo
 }
 
