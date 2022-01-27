@@ -4,9 +4,9 @@ import { NavLink } from 'react-router-dom';
 
 const HeaderWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.063rem 6.75rem ;
+    justify-content: space-between;
+    padding: 1.063rem 6.75rem;
 `
 
 const Wrapper = styled.div`
