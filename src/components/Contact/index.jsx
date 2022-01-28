@@ -9,17 +9,17 @@ import {
     StyledInput,
     ContactType,
     StyledTextArea,
-    StyledButton,
-    Title
+    StyledButton
 } from './styles'
 
+import Title from '../Title';
 
 function Contact() {
     return (
         <>
             <ContactWrapper>
                 <Info>
-                    <Title>Nous contacter</Title>
+                    <Title left='0' top='4.75rem'>Nous <span style={{fontWeight: "700"}}>contacter</span></Title>
                     <Paragraph>
                         <ContactType>Phone:</ContactType> +41 22 552 46 52
                     </Paragraph>
@@ -37,10 +37,10 @@ function Contact() {
                         <StyledInput type="email" placeholder="Email" />
                         <StyledInput type="text" placeholder="Sujet" />
                         <StyledTextArea placeholder="Message" />
-                        <StyledButton type="submit" value="Soumettre" />
-                    </ContactForm>
-                </FormWrapper>
-            </ContactWrapper>
+                        <StyledButton>Soumettre</StyledButton>
+                </ContactForm>
+            </FormWrapper>
+        </ContactWrapper>
         </>
     );
 }

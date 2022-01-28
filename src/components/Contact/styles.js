@@ -1,27 +1,15 @@
 import styled from "styled-components/macro";
 
+// import { makeStyles, withStyles } from "@mui/material";
+
+import { TextField } from "@mui/material";
+import Button from "@mui/material/Button"
+
 const ContactWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
-
-`
-
-const Title = styled.div`
-    position: absolute;
-    width: 50%;
-    left: 0;
-    top: 4.75rem;
-    
-    padding: 1.25rem 0 1.25rem 6.75rem;
-
-    font-size: 44px;
-    line-height: 100%;
-    letter-spacing: 0.15px;
-
-    background: #83A8EF;
-    
 `
 
 const Info = styled.div`
@@ -52,6 +40,8 @@ const ContactForm = styled.form`
     display: flex;
     flex-direction: column;
 
+    max-width: 50%;
+
     margin: 5rem 11.7rem 5rem 7.5rem;
 `
 
@@ -70,7 +60,6 @@ const StyledInput = styled.input`
     &::placeholder {
         color: #ffffff;
     }
-
 `
 
 const StyledTextArea = styled.textarea`
@@ -93,10 +82,16 @@ const StyledTextArea = styled.textarea`
     resize: none;
 `
 
-const StyledButton = styled(StyledInput)`
-    width: 9.75rem;
-    align-self: flex-end;
-`
+const StyledButton = styled(Button) `
+    &.MuiButton-root {
+        width: 9.75rem;
+        border: 1px solid #33608D;
+        padding: 0.875rem 0.75rem;
+        border-radius: 0;
+        color: #ffffff;
+        text-transform: none;
+        align-self: flex-end;
+}`
 
 export {
     ContactWrapper,
@@ -105,8 +100,7 @@ export {
     FormWrapper,
     ContactForm,
     StyledInput,
-    StyledButton,
     ContactType,
     StyledTextArea,
-    Title
+    StyledButton
 };
