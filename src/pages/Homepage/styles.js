@@ -26,11 +26,11 @@ const HomepageTitle = styled.div`
 `
 
 const Description = styled.p`
-    font-size: 24px;
+    font-size: 1.5rem;
+
     line-height: 200%;
 
     text-align: ${props => props.textAlign || 'unset'};
-
     color: #121212;
 `
 
@@ -57,7 +57,7 @@ const InfoLink = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 24px;
+    padding: 1.5rem;
 
     border: 1px solid #121212;
     box-sizing: border-box;

@@ -10,7 +10,7 @@ import {
     StyledImg
 } from './styles'
 
-import info_cubes from '../../assets/images/info_cubes.png'
+import infoCubes from '../../assets/images/info_cubes.png'
 
 import { ArrowSVG } from '../../assets/svg/Arrow';
 
@@ -30,7 +30,7 @@ function Homepage() {
                     en Suisse et à l’international.
                 </Description>
                 <InfoItems>
-                    <StyledImg src={info_cubes} />
+                    <StyledImg src={infoCubes} />
 
                     <StyledLink to="/services">
                         <InfoLink>
