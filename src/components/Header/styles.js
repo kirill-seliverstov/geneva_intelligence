@@ -2,18 +2,11 @@ import styled from 'styled-components';
 
 import { NavLink } from 'react-router-dom';
 
-import {
-    InstagramLogo,
-    FacebookLogo,
-    LinkedinLogo,
-    TwitterLogo
-} from '../../assets/svg/Socials';
-
 const HeaderWrapper = styled.div`
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 1.063rem 6.75rem ;
+    justify-content: space-between;
+    padding: 1rem 6.75rem;
 `
 
 const Wrapper = styled.div`
@@ -36,8 +29,7 @@ const StyledLink = styled(NavLink)`
         margin-right: 2rem;
     }
     color: #121212;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     text-decoration: none;
     &.active {
