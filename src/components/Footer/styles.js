@@ -18,10 +18,8 @@ const SocialsWrapper = styled.div`
 `
 
 const Copyright = styled.p`
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 14px;
+    font-size: 0.875rem;
     line-height: 100%;
-    letter-spacing: 0.2px;
 `
 
 

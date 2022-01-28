@@ -49,7 +49,7 @@ const StyledInput = styled.input`
     padding: 0.875rem 0.75rem;
     margin-bottom: 1.75rem;
 
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
 
     background: inherit;
@@ -67,7 +67,7 @@ const StyledTextArea = styled.textarea`
     padding: 0.875rem 0.75rem;
     margin-bottom: 1.75rem;
 
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
 
     background: inherit;

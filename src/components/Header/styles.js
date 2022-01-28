@@ -6,7 +6,7 @@ const HeaderWrapper = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 1.063rem 6.75rem;
+    padding: 1rem 6.75rem;
 `
 
 const Wrapper = styled.div`
@@ -29,8 +29,7 @@ const StyledLink = styled(NavLink)`
         margin-right: 2rem;
     }
     color: #121212;
-    font-family: 'Helvetica', 'Arial', sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     line-height: 100%;
     text-decoration: none;
     &.active {
