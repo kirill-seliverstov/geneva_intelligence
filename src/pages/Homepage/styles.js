@@ -25,6 +25,12 @@ const HomepageTitle = styled.div`
     }
 `
 
+const Container = styled.div`
+    position: relative;
+
+    background-color: ${props => props.bgColor};
+`
+
 const Description = styled.p`
     font-size: 1.5rem;
 
@@ -32,6 +38,8 @@ const Description = styled.p`
 
     text-align: ${props => props.textAlign || 'unset'};
     color: #121212;
+
+    margin-right: ${props => props.marginRight || '0'};
 `
 
 const Info = styled.div`
@@ -66,7 +74,42 @@ const InfoLink = styled.div`
 `
 
 const StyledImg = styled.img`
-    margin-right: 3.3rem;
+    margin-right: ${props => props.marginRight || '0'};
+    margin-bottom: ${props => props.marginBottom || '0'};
+`
+
+const Propos = styled.div`
+    margin: 16rem 6.75rem 0rem 6.75rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+`
+
+const TeamWrapper = styled.div`
+    padding: 2rem 6.75rem;
+`
+
+const StaffWrapper = styled.div`
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+`
+
+const StaffItem = styled.div`
+    text-align: center;
+
+    background-color: #ffffff;
+
+    width: 27%;
+
+    :not(:last-child){
+        margin-right: 1.5rem;
+    }
+
+    
 `
 
 
@@ -78,5 +121,10 @@ export {
     InfoItems,
     InfoLink,
     StyledLink,
-    StyledImg
+    StyledImg,
+    Propos,
+    Container,
+    TeamWrapper,
+    StaffWrapper,
+    StaffItem
 }
