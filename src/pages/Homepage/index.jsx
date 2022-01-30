@@ -12,7 +12,10 @@ import {
     Container,
     TeamWrapper,
     StaffWrapper,
-    StaffItem
+    StaffItem,
+    StaffName,
+    StaffPosition,
+    StaffImg
 } from './styles'
 
 import infoCubes from '../../assets/images/info_cubes.png';
@@ -53,7 +56,7 @@ function Homepage() {
             </HomepageTitle>
 
             <Info>
-                <Description textAlign={"center"}>
+                <Description textAlign={"center"} lineHeight={'200%'}>
                     Spécialisé en <span style={{ fontWeight: "bold" }}>Market Intelligence et la Competitive Intelligence</span>,
                     Geneva Intelligence réalise des missions pour vous démarquer
                     de vos concurrents et pour renforcer votre développement
@@ -114,9 +117,9 @@ function Homepage() {
                         {Staff.map((element, index) => {
                             return (
                                 <StaffItem key={index}>
-                                    <StyledImg src={element.image}/>
-                                    <p>{element.name}</p>
-                                    <p>{element.position}</p>
+                                    <StaffImg src={element.image} />
+                                    <StaffName>{element.name}</StaffName>
+                                    <StaffPosition>{element.position}</StaffPosition>
                                 </StaffItem>
                             )
                         })}

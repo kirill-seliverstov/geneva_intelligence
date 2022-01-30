@@ -34,7 +34,7 @@ const Container = styled.div`
 const Description = styled.p`
     font-size: 1.5rem;
 
-    line-height: 200%;
+    line-height: ${props => props.lineHeight || '150%'};
 
     text-align: ${props => props.textAlign || 'unset'};
     color: #121212;
@@ -93,23 +93,49 @@ const TeamWrapper = styled.div`
 
 const StaffWrapper = styled.div`
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
 
+    height: 25.25rem;
+    
+    margin-top: 4.75rem;
+    
 `
 
 const StaffItem = styled.div`
     text-align: center;
-
     background-color: #ffffff;
-
     width: 27%;
+    height: 100%;
+    padding: 0 1.875rem;
 
     :not(:last-child){
         margin-right: 1.5rem;
     }
+`
 
-    
+const StaffImg = styled(StyledImg)`
+    margin-right: 0;
+    margin-bottom: 0;
+    max-width: 12.5rem;
+    align-self: center;
+    margin-top: 2.75rem;
+`
+
+const StaffName = styled.p`
+    font-weight: bold;
+    font-size: 1.5rem;
+    line-height: 2rem;
+
+    margin: 2rem 0 1rem 0;
+    white-space: nowrap;
+`
+
+const StaffPosition = styled.p`
+    font-size: 1rem;
+    line-height: 150%;
+
+    color: #597EC7;
 `
 
 
@@ -126,5 +152,8 @@ export {
     Container,
     TeamWrapper,
     StaffWrapper,
-    StaffItem
+    StaffItem,
+    StaffName,
+    StaffPosition,
+    StaffImg
 }

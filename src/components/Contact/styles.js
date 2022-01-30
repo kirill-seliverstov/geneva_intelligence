@@ -24,6 +24,10 @@ const Paragraph = styled.p`
     letter-spacing: 0.01rem;
 
     color: #121212;
+
+    &:not(:last-child) {
+        margin-bottom: 1.75rem;
+    }
 `
 
 const ContactType = styled.span`
