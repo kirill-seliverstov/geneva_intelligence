@@ -5,7 +5,7 @@ import {
     HomepageTitle,
     Info,
     InfoItems,
-    InfoLink,
+    InfoButton,
     StyledLink,
     StyledImg,
     Propos,
@@ -15,7 +15,24 @@ import {
     StaffItem,
     StaffName,
     StaffPosition,
-    StaffImg
+    StaffImg,
+    OurValues,
+    OurValuesTitle,
+    OurValuesQuote,
+    OurValuesElement,
+    Values,
+    ValueImg,
+    ValueName,
+    ValueDesc,
+    ValueItem,
+    BlogWrapper,
+    Article,
+    ArticleDate,
+    ArticleName,
+    ArticleLink,
+    ArticlesWrapper,
+    BlogButton,
+    BlogLink
 } from './styles'
 
 import infoCubes from '../../assets/images/info_cubes.png';
@@ -24,6 +41,10 @@ import firstWorkerIMG from '../../assets/images/firstWorker.png';
 import secondWorkerIMG from '../../assets/images/secondWorker.png';
 import thirdWorkerIMG from '../../assets/images/thirdWorker.png';
 
+import universalite from '../../assets/images/universalite.png';
+import responsabilite from '../../assets/images/responsabilite.png';
+import engagement from '../../assets/images/engagement.png';
+import integrite from '../../assets/images/integrite.png';
 
 import { ArrowSVG } from '../../assets/svg/Arrow';
 
@@ -49,6 +70,21 @@ function Homepage() {
 
     ]
 
+    const Articles = [
+        {
+            date: '11. 05. 2021',
+            name: 'De nouvelles prestations 4.0 à disposition des Membres CCIG',
+        },
+        {
+            date: '11. 05. 2021',
+            name: 'De nouvelles prestations 4.0 à disposition des Membres CCIG',
+        },
+        {
+            date: '11. 05. 2021',
+            name: 'De nouvelles prestations 4.0 à disposition des Membres CCIG',
+        }
+    ]
+
     return (
         <>
             <HomepageTitle>
@@ -68,10 +104,10 @@ function Homepage() {
                     <StyledImg src={infoCubes} marginRight='3.3rem' />
 
                     <StyledLink to="/services">
-                        <InfoLink>
+                        <InfoButton>
                             Nos services et metodologies
                             <ArrowSVG marginLeft='2rem' />
-                        </InfoLink>
+                        </InfoButton>
                     </StyledLink>
                 </InfoItems>
             </Info>
@@ -126,6 +162,66 @@ function Homepage() {
                     </StaffWrapper>
                 </TeamWrapper>
             </Container>
+
+            <Container margin={"3rem 6.75rem 0"}>
+                <OurValues>
+                    <OurValuesTitle>Nos <span style={{ fontWeight: 'bold' }}>Valeurs</span></OurValuesTitle>
+                    <OurValuesQuote>" Ici une <span style={{ fontWeight: 'bold' }}>citation du directeur</span> ou de l'équipe, ou encore une citation qui fait du sens par rapport aux valeurs "</OurValuesQuote>
+                    <OurValuesElement />
+                </OurValues>
+
+                <Values>
+                    <ValueItem>
+                        <ValueImg src={integrite} margin={'0 2.5rem 0 2rem'}  />
+                        <div>
+                            <ValueName>Intégrité</ValueName>
+                            <ValueDesc>Texte à remplir ici</ValueDesc>
+                        </div>
+                    </ValueItem>
+                    <ValueItem>
+                        <ValueImg src={engagement} margin={'0 2.5rem 0 2rem'}  />
+                        <div>
+                            <ValueName>Engagement</ValueName>
+                            <ValueDesc>Texte à remplir ici</ValueDesc>
+                        </div>
+                    </ValueItem>
+                    <ValueItem>
+                        <ValueImg src={responsabilite} margin={'0 3.125rem 0 2.625rem'} />
+                        <div>
+                            <ValueName>Responsabilité</ValueName>
+                            <ValueDesc>Texte à remplir ici</ValueDesc>
+                        </div>
+                    </ValueItem>
+                    <ValueItem>
+                        <ValueImg src={universalite} margin={'0 3.125rem 0 2.625rem'} />
+                        <div>
+                            <ValueName>Universalité</ValueName>
+                            <ValueDesc>Texte à remplir ici</ValueDesc>
+                        </div>
+                    </ValueItem>
+                </Values>
+            </Container>
+
+            <BlogWrapper>
+                <Title left={'0'} top={'-7.5rem'}>B<span style={{ fontWeight: 'bold' }}>log</span></Title>
+                <ArticlesWrapper>
+                    {Articles.map((element, index) => {
+                        return (
+                            <Article key={index}>
+                                <ArticleDate>{element.date}</ArticleDate>
+                                <ArticleName>{element.name}</ArticleName>
+                                <ArticleLink to="/">Read article</ArticleLink>
+                            </Article>
+                        )
+                    })}
+                </ArticlesWrapper>
+                <BlogLink to="/blog">
+                    <BlogButton>
+                        Read more stories
+                        <ArrowSVG marginLeft='2rem' />
+                    </BlogButton>
+                </BlogLink>
+            </BlogWrapper>
         </>
     );
 }
