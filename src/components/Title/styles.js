@@ -6,6 +6,7 @@ const StyledTitle = styled.div`
     width: 50%;
     left: ${props => props.left};
     top: ${props => props.top};
+    bottom: ${props => props.bottom};
 
     padding: 1.25rem 0 1.25rem 6.75rem;
 

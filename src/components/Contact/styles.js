@@ -1,8 +1,5 @@
 import styled from "styled-components/macro";
 
-// import { makeStyles, withStyles } from "@mui/material";
-
-import { TextField } from "@mui/material";
 import Button from "@mui/material/Button"
 
 const ContactWrapper = styled.div`
@@ -24,6 +21,10 @@ const Paragraph = styled.p`
     letter-spacing: 0.01rem;
 
     color: #121212;
+
+    &:not(:last-child) {
+        margin-bottom: 1.75rem;
+    }
 `
 
 const ContactType = styled.span`
