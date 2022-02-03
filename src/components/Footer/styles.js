@@ -1,12 +1,5 @@
 import styled from 'styled-components';
 
-import {
-    InstagramLogo,
-    FacebookLogo,
-    LinkedinLogo,
-    TwitterLogo
-} from '../../assets/svg/Socials';
-
 const FooterWrapper = styled.div`
     padding: 3.125rem 0 3.125rem 0;
 

@@ -134,7 +134,7 @@ function Homepage() {
                         ainsi que des organisations internationales et des institutions
                         publiques dans une quinzaine de secteurs d’activités.
                     </Description>
-                    <StyledImg src={proposImage} marginBottom='9rem' />
+                    <StyledImg src={proposImage} marginBottom='9rem' width='100%'/>
                 </Propos>
             </Container>
 

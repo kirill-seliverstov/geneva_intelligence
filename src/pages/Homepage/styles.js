@@ -80,6 +80,7 @@ const StyledImg = styled.img`
     margin: ${props => props.margin};
     margin-right: ${props => props.marginRight};
     margin-bottom: ${props => props.marginBottom || '0'};
+    width: ${props => props.width}
 `
 
 const Propos = styled.div`
@@ -154,7 +155,7 @@ const OurValues = styled.div`
 `
 
 const OurValuesTitle = styled.p`
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: 100%;
 
     margin-bottom: 2rem;
@@ -263,7 +264,7 @@ const ArticleLink = styled(NavLink)`
 `
 
 const BlogButton = styled(InfoButton)`
-    max-width: 250px;
+    max-width: 15.6rem;
 
     border: none;
 `
@@ -273,6 +274,8 @@ const BlogLink = styled(StyledLink)`
 
     margin-top: 2rem;
     margin-right: 6.75rem;
+
+    color: inherit;
 `
 
 export {
