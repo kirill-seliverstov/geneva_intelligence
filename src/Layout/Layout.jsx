@@ -14,8 +14,10 @@ function Layout({ children }) {
 
     return (
         <>
-            { matches ? <Header /> : <MobileHeader />}
-            {children}
+            {matches ? <Header /> : <MobileHeader />}
+            <main>
+                {children}
+            </main>
             <Contact />
             <Footer />
         </>

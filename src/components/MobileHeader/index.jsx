@@ -35,7 +35,7 @@ function MobileHeader() {
             <HeaderWrapper>
                 <Toggle onClick={() => setMenuActive(!menuActive)}>
                     {
-                        menuActive ? <CloseBtn /> : <BurgerBtn />  
+                        menuActive ? <CloseBtn /> : <BurgerBtn />
                     }
                 </Toggle>
                 <StyledLink to='/'>
@@ -54,16 +54,16 @@ function MobileHeader() {
                 </StyledList>
                 <SocialsWrapper>
                     <SocialLogo>
-                        <InstagramLogo />
+                        <InstagramLogo fill="#004489" />
                     </SocialLogo>
                     <SocialLogo>
-                        <TwitterLogo />
+                        <TwitterLogo fill="#004489" />
                     </SocialLogo>
                     <SocialLogo>
-                        <FacebookLogo />
+                        <FacebookLogo fill="#004489" />
                     </SocialLogo>
                     <SocialLogo>
-                        <LinkedinLogo />
+                        <LinkedinLogo fill="#004489" />
                     </SocialLogo>
                 </SocialsWrapper>
             </Navigation>

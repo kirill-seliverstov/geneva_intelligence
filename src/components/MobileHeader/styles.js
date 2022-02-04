@@ -14,6 +14,8 @@ const HeaderWrapper = styled.div`
     padding: 0.5rem 1.125rem;
 
     background-color: #ffffff;
+
+    z-index: 9999;
 `
 
 const Toggle = styled.div`
@@ -29,7 +31,7 @@ const StyledImg = styled.img`
 
 const Navigation = styled.div`
     height: 100vh;
-    width: 71.25%;
+    width: 30%;
     
     display: flex;
     flex-direction: column;
@@ -37,11 +39,13 @@ const Navigation = styled.div`
     
     padding: 1.125rem 0 1.5rem 1rem;
     
-    position: absolute;
+    position: fixed;
     left: 0;
-    top: 3.25rem;
+    top: 0;
     
     background-color: white;
+
+    z-index: 39;
     
     transition: 0.2s;
     transform: ${props => props.menuActive ? `translateX(0)` : `translateX(-100%)`}
@@ -51,6 +55,8 @@ const StyledList = styled.ul`
     list-style: none;
     margin: 0;
     padding: 0;
+
+    margin-top: 3.125rem;
 `
 
 const StyledLink = styled(NavLink)`
@@ -71,6 +77,8 @@ const StyledLink = styled(NavLink)`
 
 const SocialsWrapper = styled.div`
     display: flex;
+
+    margin-bottom: 2rem;
 `
 
 const SocialLogo = styled.div`
