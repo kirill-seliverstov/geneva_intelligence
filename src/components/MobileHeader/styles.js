@@ -30,7 +30,7 @@ const StyledImg = styled.img`
 `
 
 const Navigation = styled.div`
-    height: 100vh;
+    height: 100%;
     width: 30%;
     
     display: flex;
@@ -48,7 +48,11 @@ const Navigation = styled.div`
     z-index: 39;
     
     transition: 0.2s;
-    transform: ${props => props.menuActive ? `translateX(0)` : `translateX(-100%)`}
+    transform: ${props => props.menuActive ? `translateX(0)` : `translateX(-100%)`};
+
+    @media screen and (max-width: 40rem) {
+        width: 70%;
+    }
 `
 
 const StyledList = styled.ul`
@@ -57,6 +61,12 @@ const StyledList = styled.ul`
     padding: 0;
 
     margin-top: 3.125rem;
+`
+
+const StyledLi = styled.li`
+    :not(:last-child) {
+        margin-bottom: 2rem;
+    }
 `
 
 const StyledLink = styled(NavLink)`
@@ -95,5 +105,6 @@ export {
     StyledList,
     StyledLink,
     SocialsWrapper,
-    SocialLogo
+    SocialLogo,
+    StyledLi
 }

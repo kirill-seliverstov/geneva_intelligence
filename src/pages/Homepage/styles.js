@@ -23,6 +23,12 @@ const HomepageTitle = styled.div`
         font-size: 2.5rem;
         padding: 9rem 7rem;
     }
+
+    @media screen and (max-width: 40rem) {
+        padding: 2rem;
+        font-size: 1rem;
+        margin-top: 50px;
+    }
 `
 
 const Container = styled.div`
@@ -43,8 +49,19 @@ const Description = styled.p`
     color: #121212;
 
     margin-right: ${props => props.marginRight || '0'};
+
+    @media screen and (max-width: 40rem) {
+        font-size: 1rem;
+    }
 `
 
+const ProposDescription = styled(Description)`
+    margin-right: 13.25rem;
+    
+    @media screen and (max-width: 40rem) {
+        margin: 0;
+    }
+`
 const Info = styled.div`
     display: flex;
     flex-direction: column;
@@ -52,11 +69,20 @@ const Info = styled.div`
     align-items: center;
 
     padding: 4.5rem 13.25rem 1.5rem;
+
+    @media screen and (max-width: 40rem) {
+        flex-direction: column;
+        padding: 2rem
+    }
 `
 
 const InfoItems = styled.div`
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 40rem) {
+        flex-direction: column;
+    }
 `
 
 const StyledLink = styled(NavLink)`
@@ -83,6 +109,14 @@ const StyledImg = styled.img`
     width: ${props => props.width}
 `
 
+const InfoImg = styled(StyledImg)`
+    margin-right: 3.3rem; 
+
+    @media screen and (max-width: 40rem) {
+        margin-right: 0;
+    }
+`
+
 const Propos = styled.div`
     margin: 16rem 6.75rem 0rem 6.75rem;
 
@@ -90,20 +124,40 @@ const Propos = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media screen and (max-width: 40rem) {
+        margin: 16rem 2rem 0 2rem;
+    }
 `
 
 const TeamWrapper = styled.div`
-    padding: 2rem 6.75rem;
+    padding: 2rem 6.75rem 0rem 6.75rem;
+
+    @media screen and (max-width: 75rem) {
+        padding: 2rem 2rem 0 2rem;
+    }
+`
+
+const TeamDescription = styled(Description)`
+    margin-right: 13.25rem;
+
+    @media screen and (max-width: 40rem) {
+        margin-right: 0;
+    }
 `
 
 const StaffWrapper = styled.div`
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     justify-content: space-between;
-
-    height: 25.25rem;
     
     margin-top: 4.75rem;
+
+    @media screen and (max-width: 40rem) {
+        margin-top: 2rem;
+        
+        flex-direction: column;
+    }
     
 `
 
@@ -111,11 +165,16 @@ const StaffItem = styled.div`
     text-align: center;
     background-color: #ffffff;
     width: 27%;
-    height: 100%;
-    padding: 0 1.875rem;
+    padding: 3.75rem 1.875rem;
 
     :not(:last-child){
         margin-right: 1.5rem;
+    }
+
+    @media screen and (max-width: 40rem) {
+        width: 100%;
+        padding: 0.5rem;
+        margin-top: 1rem;
     }
 `
 
@@ -125,6 +184,15 @@ const StaffImg = styled(StyledImg)`
     max-width: 12.5rem;
     align-self: center;
     margin-top: 2.75rem;
+
+    @media screen and (max-width: 75rem) {
+        width: 80%;
+    }
+
+    @media screen and (max-width: 40rem) {
+        width: 50%;
+        margin-top: 0;
+    }
 `
 
 const StaffName = styled.p`
@@ -134,6 +202,10 @@ const StaffName = styled.p`
 
     margin: 2rem 0 1rem 0;
     white-space: nowrap;
+
+    @media screen and (max-width: 75rem) {
+        white-space: unset;
+    }
 `
 
 const StaffPosition = styled.p`
@@ -141,6 +213,14 @@ const StaffPosition = styled.p`
     line-height: 150%;
 
     color: #597EC7;
+`
+
+const OurValuesWrapper = styled.div`
+    margin: 3rem 6.75rem 0;
+
+    @media screen and (max-width: 40rem) {
+        margin: 2rem;
+    }
 `
 
 const OurValues = styled.div`
@@ -152,6 +232,10 @@ const OurValues = styled.div`
     background: #f7f7f7;
 
     text-align: center;
+
+    @media screen and (max-width: 40rem) {
+        padding: 2rem;
+    }
 `
 
 const OurValuesTitle = styled.p`
@@ -159,11 +243,19 @@ const OurValuesTitle = styled.p`
     line-height: 100%;
 
     margin-bottom: 2rem;
+
+    @media screen and (max-width: 40rem) {
+        font-size: 1.5rem;
+    }
 `
 
 const OurValuesQuote = styled.p`
-    font-size: 36px;
+    font-size: 2rem;
     line-height: 140%;
+
+    @media screen and (max-width: 40rem) {
+        font-size: 1rem;
+    }
 `
 
 const OurValuesElement = styled.div`
@@ -184,15 +276,41 @@ const Values = styled.div`
 
     margin-top: 6rem;
     margin-bottom: 3rem;
+
+    @media screen and (max-width: 75rem) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+
+        margin-top: 6rem;
+        margin-bottom: 3rem;
+    }
+
 `
 
 const ValueItem = styled.div`
     display: flex;
     align-items: center;
+
+    @media screen and (max-width: 40rem) {
+        flex-direction: column;
+    }
 `
 
 const ValueImg = styled(StyledImg)`
     max-width: 9.375rem;
+
+
+`
+
+const ValueDescription = styled.div`
+    @media screen and (max-width: 40rem){
+        text-align: center;
+
+        :not(:last-child) {
+            margin-bottom: 1.5rem;
+        }
+    }
 `
 
 const ValueName = styled.p`
@@ -221,6 +339,12 @@ const ArticlesWrapper = styled.div`
     justify-content: space-between;
 
     margin: 0 6.75rem;
+
+    @media screen and (max-width: 40rem) {
+        margin: 2rem;
+
+        flex-direction: column;
+    }
 `
 
 const Article = styled.div`
@@ -229,6 +353,13 @@ const Article = styled.div`
     padding: 12.5rem 1.5rem 2rem;
 
     background-color: #83A8EF;
+
+    @media screen and (max-width: 40rem) {
+        width: unset;
+
+        padding: 8rem 1.5rem 2rem;
+        margin-bottom: 1rem;
+    }
 `
 
 const ArticleDate = styled.p`
@@ -310,5 +441,10 @@ export {
     ArticleLink,
     ArticlesWrapper,
     BlogButton,
-    BlogLink
+    BlogLink,
+    ValueDescription,
+    ProposDescription,
+    OurValuesWrapper,
+    TeamDescription,
+    InfoImg
 }

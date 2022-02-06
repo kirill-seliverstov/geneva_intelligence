@@ -10,11 +10,18 @@ const StyledTitle = styled.div`
 
     padding: 1.25rem 0 1.25rem 6.75rem;
 
-    font-size: 44px;
+    font-size: 2.75rem;
     line-height: 100%;
     letter-spacing: 0.15px;
 
     background: #83A8EF;
+
+    @media screen and (max-width: 75rem) {
+        width: 30%;
+        padding: 2rem;
+        
+        font-size: 2rem;
+    }
 `
 
 
