@@ -32,7 +32,12 @@ import {
     ArticleLink,
     ArticlesWrapper,
     BlogButton,
-    BlogLink
+    BlogLink,
+    ProposDescription,
+    ValueDescription,
+    OurValuesWrapper,
+    TeamDescription,
+    InfoImg
 } from './styles'
 
 import infoCubes from '../../assets/images/info_cubes.png';
@@ -101,7 +106,7 @@ function Homepage() {
                     en Suisse et à l’international.
                 </Description>
                 <InfoItems>
-                    <StyledImg src={infoCubes} marginRight='3.3rem' />
+                    <InfoImg src={infoCubes}/>
 
                     <StyledLink to="/services">
                         <InfoButton>
@@ -117,7 +122,7 @@ function Homepage() {
                     <Title left='0' top='-8rem'>
                         A <span style={{ fontWeight: 'bold' }}>propos</span>
                     </Title>
-                    <Description marginRight='13.25rem'>
+                    <ProposDescription>
                         Geneva Intelligence est un <span style={{ fontWeight: 'bold' }}>cabinet indépendant de conseils</span>,
                         spécialisé en stratégie d'entreprise et en renseignements
                         d’affaires établi à Genève en Suisse depuis 2013.
@@ -133,7 +138,7 @@ function Homepage() {
                         que ce soient des start-ups, des PME ou des grands groupes
                         ainsi que des organisations internationales et des institutions
                         publiques dans une quinzaine de secteurs d’activités.
-                    </Description>
+                    </ProposDescription>
                     <StyledImg src={proposImage} marginBottom='9rem' width='100%'/>
                 </Propos>
             </Container>
@@ -141,14 +146,14 @@ function Homepage() {
             <Container bgColor='#f7f7f7'>
                 <Title left='0' top='-5.2rem'>L'<span style={{ fontWeight: 'bold' }}>équipe</span></Title>
                 <TeamWrapper>
-                    <Description marginRight='13.25rem'>
+                    <TeamDescription>
                         Notre équipe est flexible, dynamique et hautement expérimentée.
                         Nos consultants sont issus de formations dans les domaines juridique,
                         économique, politique ainsi que des relations internationales permettant
                         une approche pluridisciplinaire et une adaptation à tous les secteurs
                         d’activité et problématiques. Tous nos consultants sont néanmoins
                         spécialisés en sciences de l’information et en intelligence économique.
-                    </Description>
+                    </TeamDescription>
                     <StaffWrapper>
                         {Staff.map((element, index) => {
                             return (
@@ -163,7 +168,7 @@ function Homepage() {
                 </TeamWrapper>
             </Container>
 
-            <Container margin={"3rem 6.75rem 0"}>
+            <OurValuesWrapper>
                 <OurValues>
                     <OurValuesTitle>Nos <span style={{ fontWeight: 'bold' }}>Valeurs</span></OurValuesTitle>
                     <OurValuesQuote>" Ici une <span style={{ fontWeight: 'bold' }}>citation du directeur</span> ou de l'équipe, ou encore une citation qui fait du sens par rapport aux valeurs "</OurValuesQuote>
@@ -173,34 +178,34 @@ function Homepage() {
                 <Values>
                     <ValueItem>
                         <ValueImg src={integrite} margin={'0 2.5rem 0 2rem'}  />
-                        <div>
+                        <ValueDescription>
                             <ValueName>Intégrité</ValueName>
                             <ValueDesc>Texte à remplir ici</ValueDesc>
-                        </div>
+                        </ValueDescription>
                     </ValueItem>
                     <ValueItem>
                         <ValueImg src={engagement} margin={'0 2.5rem 0 2rem'}  />
-                        <div>
+                        <ValueDescription>
                             <ValueName>Engagement</ValueName>
                             <ValueDesc>Texte à remplir ici</ValueDesc>
-                        </div>
+                        </ValueDescription>
                     </ValueItem>
                     <ValueItem>
                         <ValueImg src={responsabilite} margin={'0 3.125rem 0 2.625rem'} />
-                        <div>
+                        <ValueDescription>
                             <ValueName>Responsabilité</ValueName>
                             <ValueDesc>Texte à remplir ici</ValueDesc>
-                        </div>
+                        </ValueDescription>
                     </ValueItem>
                     <ValueItem>
                         <ValueImg src={universalite} margin={'0 3.125rem 0 2.625rem'} />
-                        <div>
+                        <ValueDescription>
                             <ValueName>Universalité</ValueName>
                             <ValueDesc>Texte à remplir ici</ValueDesc>
-                        </div>
+                        </ValueDescription>
                     </ValueItem>
                 </Values>
-            </Container>
+            </OurValuesWrapper>
 
             <BlogWrapper>
                 <Title left={'0'} top={'-7.5rem'}>B<span style={{ fontWeight: 'bold' }}>log</span></Title>

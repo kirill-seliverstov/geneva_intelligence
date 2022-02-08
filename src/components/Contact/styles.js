@@ -2,17 +2,33 @@ import styled from "styled-components/macro";
 
 import Button from "@mui/material/Button"
 
+import Title from "../Title";
+
 const ContactWrapper = styled.div`
     display: flex;
     justify-content: space-between;
     width: 100%;
     position: relative;
+
+    @media screen and (max-width: 40rem) {
+        flex-direction: column;
+    }
 `
 
 const Info = styled.div`
     flex: 1;
     margin-top: 13.75rem;
     margin-left: 6.75rem;
+
+    @media screen and (max-width: 75rem) {
+        margin-left: 2rem;
+    }
+
+    @media screen and (max-width: 40rem) {
+        margin-top: 13.75rem;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
 `
 
 const Paragraph = styled.p`
@@ -35,6 +51,10 @@ const ContactType = styled.span`
 const FormWrapper = styled.div`
     background: #003870;
     flex: 1;
+
+    @media screen and (max-width: 40rem) {
+        margin-top: 2rem;
+    }
 `
 
 const ContactForm = styled.form`
@@ -44,6 +64,15 @@ const ContactForm = styled.form`
     max-width: 50%;
 
     margin: 5rem 11.7rem 5rem 7.5rem;
+
+    @media screen and (max-width: 75rem) {
+        margin: 3rem;
+    }
+
+    @media screen and (max-width: 40rem) {
+        max-width: unset;
+        margin: 2rem;
+    }
 `
 
 const StyledInput = styled.input`
@@ -83,7 +112,7 @@ const StyledTextArea = styled.textarea`
     resize: none;
 `
 
-const StyledButton = styled(Button) `
+const StyledButton = styled(Button)`
     &.MuiButton-root {
         width: 9.75rem;
         border: 1px solid #33608D;

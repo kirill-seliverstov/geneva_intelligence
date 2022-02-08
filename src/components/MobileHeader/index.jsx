@@ -21,6 +21,7 @@ import {
     StyledImg,
     Navigation,
     StyledList,
+    StyledLi,
     StyledLink,
     SocialsWrapper,
     SocialLogo,
@@ -45,12 +46,12 @@ function MobileHeader() {
 
             <Navigation active={menuActive} menuActive={menuActive}>
                 <StyledList>
-                    <li>
+                    <StyledLi>
                         <StyledLink to="/services">Services &amp; Methodologie</StyledLink>
-                    </li>
-                    <li>
+                    </StyledLi>
+                    <StyledLi>
                         <StyledLink to="/blog">Blog</StyledLink>
-                    </li>
+                    </StyledLi>
                 </StyledList>
                 <SocialsWrapper>
                     <SocialLogo>
